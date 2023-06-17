@@ -12,7 +12,7 @@
     Publisher="CN=Admin"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="ED3786F2-3391-4D35-B395-AA5866C06CDA" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="ED3788F2-3691-1135-1199-AA5866C06CDA" PhonePublisherId="96005028-4038-0000-0000-000077005400"/>
 
   <Properties>
     <DisplayName>rt_podcast</DisplayName>
