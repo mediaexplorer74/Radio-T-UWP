@@ -12,6 +12,8 @@ namespace rt_podcast
     /// </summary>
     sealed partial class App : Application
     {
+        bool _isInBackgroundMode = false;
+
         private Lazy<ActivationService> _activationService;
         private ActivationService ActivationService { get { return _activationService.Value; } }
 
@@ -23,9 +25,26 @@ namespace rt_podcast
         {
             InitializeComponent();
 
+            //this.Suspending += OnSuspending;
+
+            //this.EnteredBackground += App_EnteredBackground;
+            //this.LeavingBackground += App_LeavingBackground;
+
             //Deferred execution until used. Check https://msdn.microsoft.com/library/dd642331(v=vs.110).aspx for further info on Lazy<T> class.
             _activationService = new Lazy<ActivationService>(CreateActivationService);
         }
+
+        /*
+        private void App_EnteredBackground(object sender, EnteredBackgroundEventArgs e)
+        {
+            _isInBackgroundMode = true;
+        }
+
+        private void App_LeavingBackground(object sender, LeavingBackgroundEventArgs e)
+        {
+            _isInBackgroundMode = false;
+        }
+        */
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

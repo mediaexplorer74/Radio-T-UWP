@@ -4,9 +4,8 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
   xmlns:genTemplate="http://schemas.microsoft.com/appx/developer/windowsTemplateStudio"
-  IgnorableNamespaces="uap uap3 mp genTemplate">
+  IgnorableNamespaces="uap mp genTemplate">
 
   <Identity
     Name="ME.RadioTUWPV1"
@@ -51,7 +50,6 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
-    <uap3:Capability Name="backgroundMediaPlayback"/>
   </Capabilities>
 
   <genTemplate:Metadata>

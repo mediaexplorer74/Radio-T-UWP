@@ -1,4 +1,4 @@
-## Radio-T-UWP
+## Radio-T-UWP v1.0.1
 
 Radio-T podcast app for Windows 10 (Mobile).
 
@@ -9,15 +9,19 @@ Based on Coding Blocks Podcast UWP App :)
 ![](Images/shot2.png)
 ![](Images/shot3.png)
 
+## My use case (user story/ scenario of using)
+1. At home (or at public sace with free Wi-Fi) I opened app, then I choose and "catch" (cached) 2-hour Radio-T's "podcast item" (simply started listening process) 
+2. Then I turned off WIFI and go out form home , etc. and switched the screen off :)
+3. Profit (no sim cards, no power consumptions) , hehe! 
+
 ## Tech. details
 - Fast creating of this UWP app with Windows Template Studio. :)
 - iPodcastSearch -> cross-platform, .NET Standard 1.4
-- Min. Win. OS build (SDK) = 10240 (Astoria compatibility)
+- Min. Win. OS build (SDK) = 15063 (Astoria compatibility broken, sorry!)
 Targets: x64; ARM32
 
 ## Bugs / Problems / Todos
 * On W10M Astoria : app fails on starting :(
-* No background tasking 
 * No podcast description (xml parsing needed)
 * Settings Page has bad mobile design at Portrait mode
 
